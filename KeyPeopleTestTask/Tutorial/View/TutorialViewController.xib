@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TutorialViewController" customModule="KeyPeopleTestTask" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="dW3-ba-Xdc" id="2y5-eD-dDn"/>
+                <outlet property="stepViewsContainer" destination="2Mt-P8-L7F" id="Hhy-Zi-qvD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Mt-P8-L7F">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW3-ba-Xdc">
+                    <rect key="frame" x="159" y="723" width="75" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="actionButtonTapped:" destination="-1" eventType="touchUpInside" id="ANe-dV-Yvg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2Mt-P8-L7F" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5A1-hL-v7A"/>
+                <constraint firstAttribute="trailing" secondItem="2Mt-P8-L7F" secondAttribute="trailing" id="7IA-QC-A0p"/>
+                <constraint firstItem="2Mt-P8-L7F" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fHQ-FZ-oT2"/>
+                <constraint firstAttribute="bottom" secondItem="2Mt-P8-L7F" secondAttribute="bottom" id="gCN-Wj-pmy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dW3-ba-Xdc" secondAttribute="bottom" constant="60" id="mvF-rK-Wpk"/>
+                <constraint firstItem="dW3-ba-Xdc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vhm-CB-hhx"/>
+            </constraints>
+            <point key="canvasLocation" x="82" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
